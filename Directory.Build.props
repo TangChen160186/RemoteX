@@ -1,0 +1,14 @@
+<Project>
+    <PropertyGroup>
+        <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+        <SolutionDirectory>$([System.IO.Path]::GetDirectoryName('$(DirectoryBuildPropsPath)'))</SolutionDirectory>
+        <MainOutput Condition="'$(Configuration)' == 'Debug'">$(SolutionDirectory)\RemoteX.App\bin\Debug</MainOutput>
+        <MainOutput Condition="'$(Configuration)' == 'Release'">$(SolutionDirectory)\RemoteX.App\bin\Release</MainOutput>
+    </PropertyGroup>
+
+<!--
+    <PropertyGroup>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+    -->
+</Project>

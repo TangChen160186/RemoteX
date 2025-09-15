@@ -1,7 +1,9 @@
 <Solution>
+  <Folder Name="/App/">
+    <Project Path="RemoteX.App/RemoteX.App.csproj" />
+  </Folder>
   <Folder Name="/P2P/">
     <Project Path="RemoteX.FileTransfer/RemoteX.FileTransfer.csproj" />
   </Folder>
-  <Project Path="RemoteX.App/RemoteX.App.csproj" />
   <Project Path="RemoteX.WindowsService/RemoteX.WindowsService.csproj" />
 </Solution>
